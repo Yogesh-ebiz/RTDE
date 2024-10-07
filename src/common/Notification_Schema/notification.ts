@@ -6,7 +6,7 @@ interface INotification extends Document {
     userId: mongoose.Types.ObjectId;
     title: string;
     body: string;
-    type: 'New Post' | 'New Comment' | 'New Like' | 'New Ticket Response' | 'Ticket Status Change' | 'New Event Created' | 'New Event Assignment' | 'New Circle Invite' | 'Event Reminder' | 'Custom Notification';
+    type: 'promotions' | 'Discount' | 'Booking confirmation' | 'Reminder' | 'Weather' | "Travel safty" | "Event" | "Festival"
     circleId: mongoose.Types.ObjectId;
     extras?: Record<string, any>;
     isRead: boolean;
@@ -33,7 +33,7 @@ const NotificationSchema: Schema<INotification> = new Schema(
         },
         type: {
             type: String,
-            enum: ['New Post', "New Comment", "New Like", "New Ticket Response", "Ticket Status Change", "New Event Created", "New Event Assignment", "New Circle Invite", "Event Reminder", "Custom Notification"],
+            enum: [],
             required: true
         },
         circleId: {
