@@ -2,20 +2,28 @@
   "name": "rtds",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/common/index.ts --env=dev",
+    "start": "ts-node src/common/index.ts --env=prod",
+    "beta": "ts-node src/common/index.ts --env=beta",
+    "build-prod": "tsc src/build.ts --env=prod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "aes256": "^1.1.0",
+    "command-line-args": "^6.0.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.7.0"
+    "mongoose": "^8.7.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.2.3",
