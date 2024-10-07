@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "aes256": "^1.1.0",
+    "aws-sdk": "^2.1691.0",
     "command-line-args": "^6.0.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",

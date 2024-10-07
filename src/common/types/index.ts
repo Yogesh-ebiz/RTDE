@@ -20,7 +20,7 @@ export class R<T> {
     message?: string
     errorLevel?: number
 
-    constructor(args: { result?: any, errorLevel?: number, error?: any, message?: string}) {
+    constructor(args: { result?: any, errorLevel?: number, error?: any, message?: string }) {
         this.result = args.result;
         this.message = args.message;
 
@@ -32,6 +32,7 @@ export class R<T> {
 
         }
     }
+
 
     public get hasError() {
         return this.error != null;
