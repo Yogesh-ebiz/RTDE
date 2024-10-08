@@ -1,6 +1,6 @@
 // monogo connect
 // aes256 enception with node js
-// encription decrytion -> non decrypt func and 2 encrypt func
+// encription decrytion -> one decrypt func and 2 encrypt func
 
 
 import express from 'express';
@@ -16,7 +16,6 @@ dotenv.config();
 
 const app = express();
 const port: number = parseInt(process.env.PORT || '8000');
-
 
 
 // Middleware setup

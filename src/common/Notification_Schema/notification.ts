@@ -33,7 +33,7 @@ const NotificationSchema: Schema<INotification> = new Schema(
         },
         type: {
             type: String,
-            enum: [],
+            enum: ["promotions", "Discount", "Booking confirmation", "Reminder", "Weather", "Travel safty", "Event", "Festival"],
             required: true
         },
         circleId: {
